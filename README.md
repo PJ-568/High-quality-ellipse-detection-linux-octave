@@ -13,14 +13,13 @@
 
 ## 3. How to use
 
-- Just run: `chmod +x ./compile-octave.sh && ./compile-octave.sh && octave LCS_ellipse.m`.
+- Just run: `chmod +x ./compile-octave.sh && ./compile-octave.sh && octave LCS_ellipse.m`.- Or run: `chmod +x ./batch_process.sh && ./batch_process.sh path/to/images/ path/to/results 165 0.6 0`.
 
 - ~~Firstly, compile the file "generateEllipseCandidates.cpp" in MATLAB on your computer to generate the mex file "generateEllipseCandidates.mexw64" with the following command:  ~~
   
-  ---
+  ```
   # mex generateEllipseCandidates.cpp -IF:\OpenCV\opencv2.4.9\build\include -IF:\OpenCV\opencv2.4.9\build\include\opencv -IF:\OpenCV\opencv2.4.9\build\include\opencv2 -LF:\OpenCV\opencv2.4.9\build\x64\vc11\lib -IF:\Matlab\settlein\extern\include -LF:\Matlab\settlein\extern\lib\win64\microsoft -lopencv_core249 -lopencv_highgui249 -lopencv_imgproc249 -llibmwlapack.lib  
-  
-  ---
+  ```
   ~~Notably, the corresponding software paths of OpenCV and MATLAB, namely the "F:\OpenCV\opencv2.4.9\" and "F:\Matlab\settlein\", should be replaced to your own.  ~~
 - ~~Secondly, run the demo file "LCS_ellipse.m".~~
 
@@ -84,4 +83,39 @@
 
 ## 7. Our Previous Work  
 We also proposed a [circle detection method](https://github.com/AlanLuSun/Circle-detection) in our previous work which could detect circles from image efficiently, precisely and robustly.
+
+## 8. Batch Processing
+
+For batch processing multiple images, use the provided scripts:
+
+### Option 1: Octave Script
+Edit `batch_ellipse_detection.m` to configure input/output folders and parameters, then run:
+```bash
+octave batch_ellipse_detection.m
+```
+
+### Option 2: Bash Script (Recommended)
+Use the command-line interface for flexible parameter control:
+```bash
+./batch_process.sh [input_folder] [output_folder] [Tac] [Tr] [polarity]
+```
+Examples:
+```bash
+# Process default 'pics' folder, save to 'results' with default parameters
+./batch_process.sh
+
+# Process custom folders
+./batch_process.sh my_images my_results
+
+# Custom parameters
+./batch_process.sh my_images my_results 170 0.5 0
+```
+
+The scripts will:
+1. Process all images (jpg, png, bmp, tif, tiff) in the input folder
+2. Save result images with detected ellipses drawn in red
+3. Generate text files with ellipse parameters (center_x, center_y, a, b, phi)
+4. Create a CSV summary with processing statistics
+
+Ensure Octave and OpenCV are properly installed before use.
 
