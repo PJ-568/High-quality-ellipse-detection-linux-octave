@@ -23,7 +23,7 @@ function [] = drawEllipses(ellipses_para,im)
 if ~isempty(im)
 figure;
 %imshow(im); %show image
-imshow(im,'border','tight','initialmagnification','fit'); %show image
+imshow(im); %show image - simplified for Octave compatibility
 size_im = size(im);
 hold on;
 else

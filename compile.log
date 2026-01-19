@@ -1,0 +1,388 @@
+generateEllipseCandidates.cpp: In function ‘void rect_copy(rect*, rect*)’:
+generateEllipseCandidates.cpp:230:41: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  230 |   if( in == NULL || out == NULL ) error("rect_copy: invalid 'in' or 'out'.");
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘double inter_low(double, double, double, double, double)’:
+generateEllipseCandidates.cpp:262:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  262 |     error("inter_low: unsuitable input, 'x1>x2' or 'x<x1' or 'x>x2'.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘double inter_hi(double, double, double, double, double)’:
+generateEllipseCandidates.cpp:284:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  284 |     error("inter_hi: unsuitable input, 'x1>x2' or 'x<x1' or 'x>x2'.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void ri_del(rect_iter*)’:
+generateEllipseCandidates.cpp:297:28: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  297 |   if( iter == NULL ) error("ri_del: NULL iterator.");
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘int ri_end(rect_iter*)’:
+generateEllipseCandidates.cpp:309:25: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  309 |   if( i == NULL ) error("ri_end: NULL iterator.");
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void ri_inc(rect_iter*)’:
+generateEllipseCandidates.cpp:325:25: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  325 |   if( i == NULL ) error("ri_inc: NULL iterator.");
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘rect_iter* ri_ini(rect*)’:
+generateEllipseCandidates.cpp:399:25: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  399 |   if( r == NULL ) error("ri_ini: invalid rectangle.");
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:403:25: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  403 |   if( i == NULL ) error("ri_ini: Not enough memory.");
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void free_image_double(image_double)’:
+generateEllipseCandidates.cpp:468:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  468 |     error("free_image_double: invalid input image.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘image_double_s* new_image_double(int, int)’:
+generateEllipseCandidates.cpp:481:40: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  481 |   if( xsize == 0 || ysize == 0 ) error("new_image_double: invalid image size.");
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:485:29: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  485 |   if( image == NULL ) error("not enough memory.");
+      |                             ^~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:487:35: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  487 |   if( image->data == NULL ) error("not enough memory.");
+      |                                   ^~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘image_double_s* new_image_double_ptr(int, int, double*)’:
+generateEllipseCandidates.cpp:507:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  507 |     error("new_image_double_ptr: invalid image size.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:508:28: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  508 |   if( data == NULL ) error("new_image_double_ptr: NULL data pointer.");
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:512:29: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  512 |   if( image == NULL ) error("not enough memory.");
+      |                             ^~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void free_ntuple_list(ntuple_list)’:
+generateEllipseCandidates.cpp:561:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  561 |     error("free_ntuple_list: invalid n-tuple input.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘ntuple_list_s* new_ntuple_list(int)’:
+generateEllipseCandidates.cpp:575:24: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  575 |   if( dim == 0 ) error("new_ntuple_list: 'dim' must be positive.");
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:579:31: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  579 |   if( n_tuple == NULL ) error("not enough memory.");
+      |                               ^~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:588:39: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  588 |   if( n_tuple->values == NULL ) error("not enough memory.");
+      |                                       ^~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void enlarge_ntuple_list(ntuple_list)’:
+generateEllipseCandidates.cpp:600:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  600 |     error("enlarge_ntuple_list: invalid n-tuple.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:608:39: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  608 |   if( n_tuple->values == NULL ) error("not enough memory.");
+      |                                       ^~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void add_7tuple(ntuple_list, double, double, double, double, double, double, double)’:
+generateEllipseCandidates.cpp:618:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  618 |   if( out == NULL ) error("add_7tuple: invalid n-tuple input.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:619:29: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  619 |   if( out->dim != 7 ) error("add_7tuple: the n-tuple must be a 7-tuple.");
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:623:35: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  623 |   if( out->values == NULL ) error("add_7tuple: invalid n-tuple input.");
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void add_8tuple(ntuple_list, double, double, double, double, double, double, double, int)’:
+generateEllipseCandidates.cpp:644:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  644 |   if( out == NULL ) error("add_8tuple: invalid n-tuple input.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:645:29: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  645 |   if( out->dim != 8 ) error("add_8tuple: the n-tuple must be a 8-tuple.");
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:649:35: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  649 |   if( out->values == NULL ) error("add_8tuple: invalid n-tuple input.");
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void free_image_char(image_char)’:
+generateEllipseCandidates.cpp:684:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  684 |     error("free_image_char: invalid input image.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘image_char_s* new_image_char(unsigned int, unsigned int)’:
+generateEllipseCandidates.cpp:697:40: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  697 |   if( xsize == 0 || ysize == 0 ) error("new_image_char: invalid image size.");
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:701:29: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  701 |   if( image == NULL ) error("not enough memory.");
+      |                             ^~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:704:35: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  704 |   if( image->data == NULL ) error("not enough memory.");
+      |                                   ^~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘image_char_s* new_image_char_ini(unsigned int, unsigned int, unsigned char)’:
+generateEllipseCandidates.cpp:726:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  726 |     error("new_image_char_ini: invalid image.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘image_int_s* new_image_int(unsigned int, unsigned int)’:
+generateEllipseCandidates.cpp:757:40: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  757 |   if( xsize == 0 || ysize == 0 ) error("new_image_int: invalid image size.");
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:761:29: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  761 |   if( image == NULL ) error("not enough memory.");
+      |                             ^~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:763:35: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  763 |   if( image->data == NULL ) error("not enough memory.");
+      |                                   ^~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void gaussian_kernel(ntuple_list, double, double)’:
+generateEllipseCandidates.cpp:803:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  803 |     error("gaussian_kernel: invalid n-tuple 'kernel'.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:804:28: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  804 |   if( sigma <= 0.0 ) error("gaussian_kernel: 'sigma' must be positive.");
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘image_double_s* gaussian_sampler(image_double, double, double)’:
+generateEllipseCandidates.cpp:869:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  869 |     error("gaussian_sampler: invalid image.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:870:28: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  870 |   if( scale <= 0.0 ) error("gaussian_sampler: 'scale' must be positive.");
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:872:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  872 |     error("gaussian_sampler: 'sigma_scale' must be positive.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:877:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+  877 |     error("gaussian_sampler: the output image size exceeds the handled size.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘image_double_s* ll_angle(image_double, double, coorlist**, image_double_s**, unsigned int)’:
+generateEllipseCandidates.cpp:1021:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1021 |     error("ll_angle: invalid image.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1022:31: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1022 |   if( threshold < 0.0 ) error("ll_angle: 'threshold' must be positive.");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1023:30: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1023 |   if( list_p == NULL ) error("ll_angle: NULL point2ier 'list_p'.");
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1025:31: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1025 |   if( modgrad == NULL ) error("ll_angle: NULL point2ier 'modgrad'.");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1026:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1026 |   if( n_bins == 0 ) error("ll_angle: 'n_bins' must be positive.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1047:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1047 |     error("not enough memory.");
+      |           ^~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘int isaligned(int, int, image_double, double, double)’:
+generateEllipseCandidates.cpp:1155:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1155 |     error("isaligned: invalid image 'angles'.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1157:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1157 |     error("isaligned: (x,y) out of the image.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1158:26: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1158 |   if( prec < 0.0 ) error("isaligned: 'prec' must be positive.");
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘double nfa(int, int, double, double)’:
+generateEllipseCandidates.cpp:1324:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1324 |     error("nfa: wrong n, k or p values.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘double rect_nfa(rect*, image_double, double)’:
+generateEllipseCandidates.cpp:1413:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1413 |   if( rec == NULL ) error("rect_nfa: invalid rectangle.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1414:30: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1414 |   if( angles == NULL ) error("rect_nfa: invalid 'angles'.");
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘double get_theta(point2i*, int, double, double, image_double, double, double)’:
+generateEllipseCandidates.cpp:1500:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1500 |   if( reg == NULL ) error("get_theta: invalid region.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1501:29: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1501 |   if( reg_size <= 1 ) error("get_theta: region size <= 1.");
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1503:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1503 |     error("get_theta: invalid 'modgrad'.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1504:26: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1504 |   if( prec < 0.0 ) error("get_theta: 'prec' must be positive.");
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1515:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1515 |     error("get_theta: null inertia matrix.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void region2rect(point2i*, int, image_double, double, double, double, rect*)’:
+generateEllipseCandidates.cpp:1571:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1571 |   if( reg == NULL ) error("region2rect: invalid region.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1572:29: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1572 |   if( reg_size <= 1 ) error("region2rect: region size <= 1.");
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1574:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1574 |     error("region2rect: invalid image 'modgrad'.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1575:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1575 |   if( rec == NULL ) error("region2rect: invalid 'rec'.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1596:26: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1596 |   if( sum <= 0.0 ) error("region2rect: weights sum equal to zero.");
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void region2rect2(point2i*, int, double, double, double, double, double, rect*)’:
+generateEllipseCandidates.cpp:1673:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1673 |   if( reg == NULL ) error("region2rect: invalid region.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1674:29: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1674 |   if( reg_size <= 1 ) error("region2rect: region size <= 1.");
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1675:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1675 |   if( rec == NULL ) error("region2rect: invalid 'rec'.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void region_grow(int, int, image_double, point2i*, int*, double*, image_char, double)’:
+generateEllipseCandidates.cpp:1729:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1729 |     error("region_grow: (x,y) out of the image.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1731:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1731 |     error("region_grow: invalid image 'angles'.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1732:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1732 |   if( reg == NULL ) error("region_grow: invalid 'reg'.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1733:32: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1733 |   if( reg_size == NULL ) error("region_grow: invalid point2ier 'reg_size'.");
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1734:33: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1734 |   if( reg_angle == NULL ) error("region_grow: invalid point2ier 'reg_angle'.");
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1736:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1736 |     error("region_grow: invalid image 'used'.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘int reduce_region_radius(point2i*, int*, image_double, double, double, double, rect*, image_char, image_double, double)’:
+generateEllipseCandidates.cpp:1895:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1895 |   if( reg == NULL ) error("reduce_region_radius: invalid point2ier 'reg'.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1897:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1897 |     error("reduce_region_radius: invalid point2ier 'reg_size'.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1898:26: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1898 |   if( prec < 0.0 ) error("reduce_region_radius: 'prec' must be positive.");
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1899:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1899 |   if( rec == NULL ) error("reduce_region_radius: invalid point2ier 'rec'.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1901:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1901 |     error("reduce_region_radius: invalid image 'used'.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1903:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1903 |     error("reduce_region_radius: invalid image 'angles'.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘int refine(point2i*, int*, image_double, double, double, double, rect*, image_char, image_double, double)’:
+generateEllipseCandidates.cpp:1972:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1972 |   if( reg == NULL ) error("refine: invalid point2ier 'reg'.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1973:32: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1973 |   if( reg_size == NULL ) error("refine: invalid point2ier 'reg_size'.");
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1974:26: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1974 |   if( prec < 0.0 ) error("refine: 'prec' must be positive.");
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1975:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1975 |   if( rec == NULL ) error("refine: invalid point2ier 'rec'.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1977:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1977 |     error("refine: invalid image 'used'.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:1979:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 1979 |     error("refine: invalid image 'angles'.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘bool isArcSegment(point2i*, int, rect*, image_double, image_char, image_char, double, double, rect*, rect*)’:
+generateEllipseCandidates.cpp:2057:25: 警告：case 标号值比该类型的最小值还要小 [-Wswitch-outside-range]
+ 2057 |                         case OPP_POL : opp_pol_cnt++; break;//ͳ�Ʒ����Ե�pixel����
+      |                         ^~~~
+generateEllipseCandidates.cpp: In function ‘double* LineSegmentDetection(int*, double*, int, int, double, double, double, double, double, double, int, int**, int*, int*)’:
+generateEllipseCandidates.cpp:2204:47: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2204 |   if( img == NULL || X <= 0 || Y <= 0 ) error("invalid image input.");
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:2205:28: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2205 |   if( scale <= 0.0 ) error("'scale' value must be positive.");
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:2206:34: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2206 |   if( sigma_scale <= 0.0 ) error("'sigma_scale' value must be positive.");
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:2207:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2207 |   if( quant < 0.0 ) error("'quant' value must be positive.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:2209:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2209 |     error("'ang_th' value must be in the range (0,180).");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:2211:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2211 |     error("'density_th' value must be in the range [0,1].");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:2212:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2212 |   if( n_bins <= 0 ) error("'n_bins' value must be positive.");
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:2260:27: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2260 |   if( reg == NULL ) error("not enough memory!");
+      |                           ^~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:2391:34: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2391 |       if( region == NULL ) error("'region' should be a valid image.");
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:2395:15: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2395 |         error("region image to big to fit in INT sizes.");
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:2405:11: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2405 |     error("too many detections to fit in an INT.");
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void groupLSs(double*, int, int*, int, int, std::vector<std::vector<int> >*)’:
+generateEllipseCandidates.cpp:2577:79: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2577 |                                                                         error("group ls error1");
+      |                                                                               ^~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:2597:50: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2597 |                                            error("group ls error2");
+      |                                                  ^~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:2658:79: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2658 |                                                                         error("group ls error3");
+      |                                                                               ^~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:2678:50: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2678 |                                            error("group ls error2");
+      |                                                  ^~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘int cluster2DPoints(double*, int, double, double*&, int*)’:
+generateEllipseCandidates.cpp:2954:23: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 2954 |                 error("cluster2DPoints, not enough memory");
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘PairGroupList* pairGroupListInit(int)’:
+generateEllipseCandidates.cpp:3194:23: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 3194 |                 error("paired groups length less equal than 0");
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:3199:23: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 3199 |                 error("pairGroupListInit,not enough memory");
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void freePairGroupList(PairGroupList*)’:
+generateEllipseCandidates.cpp:3206:23: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 3206 |                 error("freePairGroupList,invalidate free");
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void calculateGradient(double*, unsigned int, unsigned int, image_double_s**, image_double_s**)’:
+generateEllipseCandidates.cpp:3218:23: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 3218 |                 error("calculateGradient error!");
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void calculateGradient2(double*, unsigned int, unsigned int, image_double_s**)’:
+generateEllipseCandidates.cpp:3287:23: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 3287 |                 error("calculateGradient error!");
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘PairGroupList* getValidInitialEllipseSet(double*, int, std::vector<std::vector<int> >*, double*, image_double, double, int)’:
+generateEllipseCandidates.cpp:4568:47: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 4568 |                                         error("getValidInitialEllipseSet, selection of salient ellipses failed!");//�����������֣���,��54.jpg���ָ�����
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void generateEllipseCandidates(PairGroupList*, double, double*&, int*)’:
+generateEllipseCandidates.cpp:4714:23: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 4714 |                 error("generateEllipseCandidates, not enough memory");
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:4730:23: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 4730 |                 error("generateEllipseCandidates, cluster2DPoints, error in clustering elliptic centers");
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp:4769:31: 警告：ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 4769 |                         error("generateEllipseCandidates, no XY points near to the clustering center");
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generateEllipseCandidates.cpp: In function ‘void mexFunction(int, mxArray**, int, const mxArray**)’:
+generateEllipseCandidates.cpp:4934:51: 警告：格式 ‘%i’ expects argument of type ‘int’, but argument 2 has type ‘std::vector<std::vector<int> >::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+ 4934 |         printf("The number of arc-support groups:%i\n",groups.size());
+      |                                                  ~^    ~~~~~~~~~~~~~
+      |                                                   |               |
+      |                                                   int             std::vector<std::vector<int> >::size_type {aka long unsigned int}
+      |                                                  %li
+generateEllipseCandidates.cpp:4997:38: 警告：格式 ‘%i’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+ 4997 |          printf("edge pixel number: %i\n",edge_pixels_total_num);
+      |                                     ~^    ~~~~~~~~~~~~~~~~~~~~~
+      |                                      |    |
+      |                                      int  long unsigned int
+      |                                     %li
+generateEllipseCandidates.cpp: In function ‘image_double_s* ll_angle(image_double, double, coorlist**, image_double_s**, unsigned int)’:
+generateEllipseCandidates.cpp:1101:31: 警告：ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+ 1101 |                         system("pause");
+      |                         ~~~~~~^~~~~~~~~

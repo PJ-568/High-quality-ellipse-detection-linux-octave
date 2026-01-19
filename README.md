@@ -6,20 +6,23 @@
 - The source code is free for academic use. Please cite our paper if you use the source code, thanks.
 
 ## 2. Requirements
-- MATLAB
-- OpenCV (Version 2.4.9)
-- 64-bit Windows Operating System
+- ~~MATLAB~~ octave 10.3.0
+- OpenCV ~~(Version 2.4.9)~~ 4.12.0
+- 64-bit ~~Windows Operating System~~ GNU/Linux System
 
 
 ## 3. How to use
-- Firstly, compile the file "generateEllipseCandidates.cpp" in MATLAB on your computer to generate the mex file "generateEllipseCandidates.mexw64" with the following command:  
+
+- Just run: `chmod +x ./compile-octave.sh && ./compile-octave.sh && octave LCS_ellipse.m`.
+
+- ~~Firstly, compile the file "generateEllipseCandidates.cpp" in MATLAB on your computer to generate the mex file "generateEllipseCandidates.mexw64" with the following command:  ~~
   
   ---
-  mex generateEllipseCandidates.cpp -IF:\OpenCV\opencv2.4.9\build\include -IF:\OpenCV\opencv2.4.9\build\include\opencv -IF:\OpenCV\opencv2.4.9\build\include\opencv2 -LF:\OpenCV\opencv2.4.9\build\x64\vc11\lib -IF:\Matlab\settlein\extern\include -LF:\Matlab\settlein\extern\lib\win64\microsoft -lopencv_core249 -lopencv_highgui249 -lopencv_imgproc249 -llibmwlapack.lib  
+  # mex generateEllipseCandidates.cpp -IF:\OpenCV\opencv2.4.9\build\include -IF:\OpenCV\opencv2.4.9\build\include\opencv -IF:\OpenCV\opencv2.4.9\build\include\opencv2 -LF:\OpenCV\opencv2.4.9\build\x64\vc11\lib -IF:\Matlab\settlein\extern\include -LF:\Matlab\settlein\extern\lib\win64\microsoft -lopencv_core249 -lopencv_highgui249 -lopencv_imgproc249 -llibmwlapack.lib  
   
   ---
-  Notably, the corresponding software paths of OpenCV and MATLAB, namely the "F:\OpenCV\opencv2.4.9\" and "F:\Matlab\settlein\", should be replaced to your own.  
-- Secondly, run the demo file "LCS_ellipse.m".
+  ~~Notably, the corresponding software paths of OpenCV and MATLAB, namely the "F:\OpenCV\opencv2.4.9\" and "F:\Matlab\settlein\", should be replaced to your own.  ~~
+- ~~Secondly, run the demo file "LCS_ellipse.m".~~
 
 
 ## 4. Examples

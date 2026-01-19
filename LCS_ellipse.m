@@ -15,7 +15,7 @@ function []  = LCS_ellipse()
 close all;
 
 %image path
-filename = 'D:\Graduate Design\Ellipse Detection\MyEllipse - github\pics\666.jpg';
+filename = 'pics/666.jpg';
 
 % parameters
 Tac = 165;
@@ -36,7 +36,7 @@ drawEllipses(ellipses',I);
 % display
 ellipses(:,5) = ellipses(:,5)./pi*180;
 ellipses
-disp(['The total number of detected ellipses£º',num2str(size(ellipses,1))]);
+disp(['The total number of detected ellipsesï¿½ï¿½',num2str(size(ellipses,1))]);
 
 %% draw ellipse centers
 %hold on;
@@ -46,6 +46,10 @@ disp(['The total number of detected ellipses£º',num2str(size(ellipses,1))]);
 %% write the result image
 %set(gcf,'position',[0 0 size(I,2) size(I,1)]);
 %saveas(gcf, 'D:\Graduate Design\Ellipse Detection\MyEllipse - github\pics\666_all.jpg', 'jpg');
+
+% Keep figure window open
+disp('Press any key to close the figure window...');
+pause;
 end
 
 
